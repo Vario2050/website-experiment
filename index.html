@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Experiment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #4a6baf;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 1rem;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 2rem 0;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Website Experiment</h1>
+        <p>Created and managed through browser automation</p>
+    </header>
+    
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    
+    <div class="container">
+        <div class="content">
+            <div class="card">
+                <h2>About This Project</h2>
+                <p>This website demonstrates the capabilities of Model Context Protocol (MCP) servers and browser automation. The entire site is created, deployed, and managed through automated browser interactions.</p>
+            </div>
+            
+            <div class="card">
+                <h2>Technology Stack</h2>
+                <ul>
+                    <li><strong>GitHub Pages</strong> - For hosting the website</li>
+                    <li><strong>Browser Automation</strong> - For site management</li>
+                    <li><strong>Claude AI</strong> - For generating content and code</li>
+                    <li><strong>MCP Servers</strong> - For extending AI capabilities</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2>Live Updates</h2>
+                <p>This section could be updated programmatically to show the latest changes or site statistics.</p>
+                <p>Last updated: <span id="last-update">[Date will be inserted via script]</span></p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Website Experiment | Created with AI assistance</p>
+    </footer>
+    
+    <script>
+        // Add the current date to the last-update span
+        document.getElementById('last-update').textContent = new Date().toLocaleString();
+    </script>
+</body>
+</html>
